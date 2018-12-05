@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-sass": "node-sass scss/main.scss style.css",
-    "watch-sass": "node-sass scss/main.scss style.css -w"
+    "compile-sass": "node-sass static/scss/main.scss static/css/style.css",
+    "watch-sass": "node-sass static/scss/main.scss static/css/style.css -w"
   },
   "author": "",
   "license": "ISC",

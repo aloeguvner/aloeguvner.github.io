@@ -1,0 +1,8 @@
+@function hslac($color, $alpha) {
+    @if(type-of($color) == "color") {
+        @return hsla(hue($color), saturation($color), lightness($color), $alpha);
+    }
+    @else {
+        @error "Color object not passed as argument.";
+    }
+}

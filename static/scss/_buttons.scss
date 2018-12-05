@@ -1,0 +1,89 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        border-radius: 2rem;
+        font-size: 2rem;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        transition: all 400ms;
+        text-decoration: none;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem hslac($color-black, .2);
+
+    }
+
+    &:active,
+    &:focus {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem hslac($color-black, .2);   
+    }
+
+    &--white {
+        background-color: $color-white;
+        color: $color-black;
+    }
+
+    &--red {
+        background-color: red;
+        color: $color-white;
+    }
+
+    &--blue {
+        background-color: blue;
+        color: $color-white;
+    }
+
+    &--green {
+        background-color: green;
+        color: $color-white;
+    }
+
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        display: inline-block;
+        transition: all 400ms;
+        font-size: 2rem;
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+        
+        color: $color-primary;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        margin: 1rem auto;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem hslac($color-black, .15);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem hslac($color-black, .15); 
+    }
+
+    &--white {
+        &:link,
+        &:visited {
+            color: $color-white;
+            border-bottom: 1px solid $color-white;
+        }
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-primary;
+        }
+    }
+}

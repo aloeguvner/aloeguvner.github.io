@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+
+    background-color: $color-primary;
+
+    &__nav {
+        flex-grow: 1;
+
+        &-list {
+            display: flex;
+
+            &:first-child {
+                margin-left: 4rem;
+            }
+    
+            &-item {
+                padding: 1rem;
+                margin: 1rem 2rem;
+                font-size: 2rem;
+                &-link {
+                    transition: color 400ms;
+                }
+
+                &-link,
+                &-link:visited,
+                &-link:active {
+                    text-decoration: none;
+                    color: $color-white;
+                }
+
+                &-link:hover {
+                    color: $color-secondary-light;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        flex-grow: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-text {
+            color: $color-white;
+            font-size: 3rem;
+        }
+    }
+}

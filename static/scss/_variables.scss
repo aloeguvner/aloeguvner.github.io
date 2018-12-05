@@ -1,0 +1,39 @@
+// Typography
+
+$default-font-size: 1.6rem;
+
+// Colors
+
+$color-primary-light:hsl(187, 100%, 44%);
+$color-primary-background:hsla(187, 100%, 44%, 0.3);
+$color-primary:hsl(214, 50%, 38%);
+$color-primary-dark:hsl(236, 31%, 31%);
+$color-primary-background-dark:hsla(236, 31%, 31%, 0.3);
+
+$color-secondary-light:hsl(180, 100%, 33%);
+$color-secondary:hsl(180, 75%, 30%);
+$color-secondary-dark:hsl(180, 50%, 27%);
+
+$color-tertiary-light:hsl(153, 100%, 50%);
+$color-tertiary: hsl(153, 76%, 39%);
+$color-tertiary-dark: hsl(153, 30%, 18%);
+
+$color-white: hsl(0, 100%, 100%);
+$color-black: rgb(0, 0, 0);
+
+$color-gray-light-1: #d6d6d6;
+$color-gray-light-2: #eeeeee;
+
+$color-gray-dark-1: #777777;
+$color-gray-dark-2: #999999;
+$color-gray-dark-3: #333333;
+
+$color-shade-darker: rgba(0, 0, 0, .1);
+
+// Borders
+
+$border-radius: 3px;
+
+// Offsets
+
+// $landing-offset: -25vh;
