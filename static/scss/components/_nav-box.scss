@@ -1,0 +1,45 @@
+.nav-box {
+    &-container {
+        // padding: 1rem;
+        // margin: 2rem;
+        // background-color: rgba(0, 0, 0, .2);
+        // // display: flex;
+        // // flex-direction: column;
+        // min-height: 40rem;
+        // width: 30%;
+    }
+
+    &-list-header {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        background-color: $color-primary-dark;
+        left: 0;
+        height: 100%; /* Full height */
+        position: fixed; /* Make it stick, even on scroll */
+        overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    }
+
+    &-link {
+        padding: 1rem;
+        width: 100%;
+        transition: all 400ms;
+        display: inline-block;
+        color: $color-gray-light-1;
+        &:hover {
+            background-color: rgba(0, 0, 0, .2);
+        }
+    }
+
+
+    &-link,
+    &-link:visited,
+    &-link:active {
+        text-decoration: none;
+    }
+
+    &-text {
+        font-size: 2rem;
+    }
+}

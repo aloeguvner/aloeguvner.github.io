@@ -1,9 +1,4 @@
-.site-container {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.content {
+.plugin-content {
     &__container {
         padding: 1rem;
         margin: 1rem;
@@ -16,6 +11,8 @@
         font-size: 3rem;
         font-weight: bold;
         background-color: $color-shade-darker;
+
+        display: flex;
         
         &-title {
             padding: .5rem;
@@ -26,6 +23,10 @@
         padding: 2rem;
         line-height: 1.25;
         display: flex;
+        transition: all 400ms;
+        &:hover {
+            background-color: rgba(255, 255, 255, .1)
+        }
 
         &-text-container {
             display: flex;

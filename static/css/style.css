@@ -37,51 +37,88 @@ body {
       padding: 0; } }
 
 .site-container {
-  width: 70%;
+  width: 90%;
   margin: 0 auto; }
 
-.content__container {
+.plugin-container {
+  width: 80%;
+  margin: 3rem 3rem 3rem auto; }
+
+.plugin-content__container {
   padding: 1rem;
   margin: 1rem;
   background-color: rgba(55, 58, 104, 0.3);
   display: flex;
   flex-direction: column; }
 
-.content__header {
+.plugin-content__header {
   font-size: 3rem;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.1); }
-  .content__header-title {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex; }
+  .plugin-content__header-title {
     padding: .5rem; }
 
-.content__body {
+.plugin-content__body {
   padding: 2rem;
   line-height: 1.25;
-  display: flex; }
-  .content__body-text-container {
+  display: flex;
+  transition: all 400ms; }
+  .plugin-content__body:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+  .plugin-content__body-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 2rem; }
-  .content__body-text-ul {
+  .plugin-content__body-text-ul {
     list-style: initial; }
-  .content__body-text-li {
+  .plugin-content__body-text-li {
     list-style: initial;
     list-style-position: inside; }
-  .content__body-image {
+  .plugin-content__body-image {
     max-width: 100%;
     max-height: 100%; }
-  .content__body-image-container {
+  .plugin-content__body-image-container {
     width: 35%;
     height: 35%; }
 
-.content__links {
+.plugin-content__links {
   display: flex;
   justify-content: space-between;
   padding: 1rem; }
 
-.content__link-item {
+.plugin-content__link-item {
   border-radius: 10%; }
+
+.nav-box-list-header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #373a68;
+  left: 0;
+  height: 100%;
+  /* Full height */
+  position: fixed;
+  /* Make it stick, even on scroll */
+  overflow: auto;
+  /* Enable scrolling if the sidenav has too much content */ }
+
+.nav-box-link {
+  padding: 1rem;
+  width: 100%;
+  transition: all 400ms;
+  display: inline-block;
+  color: #d6d6d6; }
+  .nav-box-link:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
+
+.nav-box-link, .nav-box-link:visited, .nav-box-link:active {
+  text-decoration: none; }
+
+.nav-box-text {
+  font-size: 2rem; }
 
 .btn, .btn:link, .btn:visited {
   border-radius: 2rem;
