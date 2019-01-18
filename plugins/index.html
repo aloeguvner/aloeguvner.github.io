@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aloe Guvner - MV Plugins</title>
+    <title>Aloe Guvner - RPG Maker MV</title>
     <link rel="stylesheet" href="/static/css/reset.css">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -13,25 +13,25 @@
 
 <body>
     <header class="header">
-
         <nav class="header__nav">
             <ol class="header__nav-list">
                 <li class="header__nav-list-item">
                     <a href="/" class="header__nav-list-item-link">Home</a>
                 </li>
                 <li class="header__nav-list-item">
-                    <a href="/plugins" class="header__nav-list-item-link">Plugins</a>
+                    <span href="/plugins" class="header__nav-list-item-link header__nav-list-item-link-disabled">Plugins</span>
                 </li>
                 <li class="header__nav-list-item">
                     <a href="/tutorials" class="header__nav-list-item-link">Tutorials</a>
                 </li>
-                <li class="header__nav-list-item">
+                <!-- <li class="header__nav-list-item">
                     <a href="/resources" class="header__nav-list-item-link">Resources</a>
-                </li>
+                </li> -->
             </ol>
         </nav>
         <div class="header__logo">
             <span class="header__logo-text">Aloe Guvner Plugins</span>
+            <img src="/static/img/ALOE_Avatar.png" alt="Site Logo" class="header__logo-picture">
         </div>
     </header>
 
@@ -39,23 +39,25 @@
 
         <nav class="nav-box-container">
             <ul class="nav-box-list-header">
-                <a href="#mobile-ui" class="nav-box-link"><span class="nav-box-text">Mobile User Interface</span></a>
+                <a href="/plugins/mobile-user-interface" class="nav-box-link"><span class="nav-box-text">Mobile User
+                        Interface</span></a>
                 <a href="#conditional-choices" class="nav-box-link"><span class="nav-box-text">Conditional Choices</span></a>
                 <a href="#player-notepad" class="nav-box-link"><span class="nav-box-text">Player Notepad</span></a>
-                <a href="#sync-vars-items" class="nav-box-link"><span class="nav-box-text">Synchronize Variables with Items</span></a>
+                <a href="#sync-vars-items" class="nav-box-link"><span class="nav-box-text">Synchronize Variables with
+                        Items</span></a>
             </ul>
         </nav>
 
-        <div class="plugin-container">
+        <div class="content-container">
             <!-- Plugin 1 -->
 
-            <article class="plugin-content__container" id="mobile-ui">
-                <div class="plugin-content__header">
-                    <span class="plugin-content__header-title">Mobile User Interface</span>
-                    <a href="./mobile-ui" class="btn-text">More Information &rarr;</a>
+            <article class="content__container" id="mobile-ui">
+                <div class="content__header">
+                    <span class="content__header-title">Mobile User Interface</span>
+                    <a href="/plugins/mobile-user-interface" class="btn-text">More Information &rarr;</a>
                 </div>
-                <div class="plugin-content__body">
-                    <div class="plugin-content__body-text-container">
+                <div class="content__body">
+                    <div class="content__body-text-container">
                         <p>This plugin focuses on improving the user interface for mobile games created
                             in RPG Maker MV, by allowing the developer to have virtual buttons on the
                             screen that interact with touch input.</p>
@@ -64,11 +66,11 @@
                             few buttons as you want to the screen, and you can add these buttons on whichever screens
                             you would like (i.e. map, menu, credits, title, etc.).</p>
                     </div>
-                    <div class="plugin-content__body-image-container">
-                        <img src="/static/img/placeholder.png" alt="Plugin Image Description" class="plugin-content__body-image">
+                    <div class="content__body-image-container">
+                        <img src="/static/img/placeholder.png" alt="Plugin Image Description" class="content__body-image">
                     </div>
                 </div>
-                <div class="plugin-content__links">
+                <div class="content__links">
                     <a href="https://raw.githubusercontent.com/aloeguvner/rpg-maker-mv/master/plugins/ALOE_MobileUI.js"
                         class="btn btn--white content__link-item">
                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;Download
@@ -90,13 +92,13 @@
 
             <!-- Plugin 2 -->
 
-            <article class="plugin-content__container" id="conditional-choices">
-                <div class="plugin-content__header">
-                    <span class="plugin-content__header-title">Conditional Choices</span>
+            <article class="content__container" id="conditional-choices">
+                <div class="content__header">
+                    <span class="content__header-title">Conditional Choices</span>
                     <a href="./conditional-choices" class="btn-text">More Information &rarr;</a>
                 </div>
-                <div class="plugin-content__body">
-                    <div class="plugin-content__body-text-container">
+                <div class="content__body">
+                    <div class="content__body-text-container">
                         <p>This plugin allows developers to set conditions directly in the "Show Choices"
                             event command. These conditions can determine whether the choice is hidden or disabled.</p>
 
@@ -108,11 +110,11 @@
                             interesting choices.
                         </p>
                     </div>
-                    <div class="plugin-content__body-image-container">
-                        <img src="/static/img/placeholder.png" alt="Plugin Image Description" class="plugin-content__body-image">
+                    <div class="content__body-image-container">
+                        <img src="/static/img/placeholder.png" alt="Plugin Image Description" class="content__body-image">
                     </div>
                 </div>
-                <div class="plugin-content__links">
+                <div class="content__links">
                     <a href="https://raw.githubusercontent.com/aloeguvner/rpg-maker-mv/master/plugins/ALOE_ConditionalChoices.js"
                         class="btn btn--white content__link-item">
                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;Download
@@ -134,34 +136,34 @@
 
             <!-- Plugin 3 -->
 
-            <article class="plugin-content__container" id="player-notepad">
-                <div class="plugin-content__header">
-                    <span class="plugin-content__header-title">Player Notepad</span>
+            <article class="content__container" id="player-notepad">
+                <div class="content__header">
+                    <span class="content__header-title">Player Notepad</span>
                     <a href="./player-notepad" class="btn-text">More Information &rarr;</a>
                 </div>
-                <div class="plugin-content__body">
-                    <div class="plugin-content__body-text-container">
+                <div class="content__body">
+                    <div class="content__body-text-container">
                         This plugin creates a new scene where the player can create, modify, and delete notes.
                         The player uses their keyboard to type the notes, and all notes are saved along with the
                         game's save file.
                         <br>
                         This opens up uses in:
 
-                        <ul class="plugin-content__body-text-ul">
-                            <li class="plugin-content__body-text-li">Quest notes</li>
-                            <li class="plugin-content__body-text-li">Educational games</li>
-                            <li class="plugin-content__body-text-li">Crime/mystery games (player detective writes notes
+                        <ul class="content__body-text-ul">
+                            <li class="content__body-text-li">Quest notes</li>
+                            <li class="content__body-text-li">Educational games</li>
+                            <li class="content__body-text-li">Crime/mystery games (player detective writes notes
                                 about
                                 suspects)</li>
-                            <li class="plugin-content__body-text-li">Crafting/recipes</li>
-                            <li class="plugin-content__body-text-li">and many more!</li>
+                            <li class="content__body-text-li">Crafting/recipes</li>
+                            <li class="content__body-text-li">and many more!</li>
                         </ul>
                     </div>
-                    <div class="plugin-content__body-image-container">
-                        <img src="/static/img/placeholder.png" alt="Plugin Image Description" class="plugin-content__body-image">
+                    <div class="content__body-image-container">
+                        <img src="/static/img/placeholder.png" alt="Plugin Image Description" class="content__body-image">
                     </div>
                 </div>
-                <div class="plugin-content__links">
+                <div class="content__links">
                     <a href="https://raw.githubusercontent.com/aloeguvner/rpg-maker-mv/master/plugins/ALOE_ConditionalChoices.js"
                         class="btn btn--white content__link-item">
                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;Download
@@ -183,13 +185,13 @@
 
             <!-- Plugin 4 -->
 
-            <article class="plugin-content__container" id="sync-vars-items">
-                <div class="plugin-content__header">
-                    <span class="plugin-content__header-title">Synchronize Variables and Items/Equipment</span>
+            <article class="content__container" id="sync-vars-items">
+                <div class="content__header">
+                    <span class="content__header-title">Synchronize Variables and Items/Equipment</span>
                     <a href="./sync-vars-items" class="btn-text">More Information &rarr;</a>
                 </div>
-                <div class="plugin-content__body">
-                    <div class="plugin-content__body-text-container">
+                <div class="content__body">
+                    <div class="content__body-text-container">
                         <p>This plugin will synchronize the value of a variable with the inventory count
                             of a certain item/weapon/armor, making sure that they are always the same.</p>
                         <p><br></p>
@@ -198,11 +200,11 @@
                             trade quests, among other possibilities!
                         </p>
                     </div>
-                    <div class="plugin-content__body-image-container">
-                        <img src="/static/img/placeholder.png" alt="Plugin Image Description" class="plugin-content__body-image">
+                    <div class="content__body-image-container">
+                        <img src="/static/img/placeholder.png" alt="Plugin Image Description" class="content__body-image">
                     </div>
                 </div>
-                <div class="plugin-content__links">
+                <div class="content__links">
                     <a href="https://raw.githubusercontent.com/aloeguvner/rpg-maker-mv/master/plugins/ALOE_Sync_Variables_Items.js"
                         class="btn btn--white content__link-item">
                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;Download

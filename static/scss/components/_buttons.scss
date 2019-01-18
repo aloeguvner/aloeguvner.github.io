@@ -4,7 +4,7 @@
     &:visited {
         border-radius: 2rem;
         font-size: 2rem;
-        padding: 1.5rem 4rem;
+        padding: 1.5rem 3rem;
         display: inline-block;
         transition: all 400ms;
         text-decoration: none;
@@ -13,7 +13,6 @@
     &:hover {
         transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem hslac($color-black, .2);
-
     }
 
     &:active,
