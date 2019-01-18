@@ -67,6 +67,14 @@ body {
     padding: .5rem;
     margin-left: 2rem; }
 
+.content__subheader {
+  font-size: 2rem;
+  color: rbga(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.1); }
+  .content__subheader-subtitle {
+    padding: .5rem;
+    margin-left: 2rem; }
+
 .content__body {
   padding: 2rem;
   line-height: 1.25;

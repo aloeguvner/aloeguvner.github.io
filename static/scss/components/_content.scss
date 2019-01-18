@@ -25,6 +25,17 @@
         }
     }
 
+    &__subheader {
+        font-size: 2rem;
+        color: rbga(0, 0, 0, .9);
+        background-color: $color-shade-lighter;
+
+        &-subtitle {
+            padding: .5rem;
+            margin-left: 2rem;
+        }
+    }
+
     &__body {
         padding: 2rem;
         line-height: 1.25;
