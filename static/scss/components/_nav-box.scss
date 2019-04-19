@@ -1,5 +1,11 @@
 .nav-box {
 
+    &-container {
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
     &-list-header {
         list-style-type: none;
         margin: 0;
@@ -37,4 +43,5 @@
     &-text {
         font-size: 2rem;
     }
+    
 }

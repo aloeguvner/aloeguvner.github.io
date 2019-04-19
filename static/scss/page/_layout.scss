@@ -2,9 +2,21 @@
     width: 90%;
     margin: 0 auto;
     padding-top: 10rem;
+
+    display: flex;
+    justify-content: center;
+
+    @include respond(phone) {
+        padding-top: 14rem;
+    }
+
 }
 
 .content-container {
-    width: 80%;
-    margin: 0 3rem 3rem auto;
+    margin: 0 3rem 3rem 3rem;
+
+    @include respond(phone) {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
 }

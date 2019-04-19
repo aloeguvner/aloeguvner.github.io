@@ -50,15 +50,20 @@
         display: inline-block;
         transition: all 400ms;
         font-size: 2rem;
-
-        @include respond(tab-port) {
-            font-size: 2rem;
-        }
         
         color: $color-primary;
         border-bottom: 1px solid $color-primary;
         padding: 3px;
         margin: 1rem auto;
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+
+        @include respond(phone) {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
     }
 
     &:hover {
