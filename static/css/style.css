@@ -39,9 +39,8 @@ body {
   line-height: 1.7; }
 
 .site-container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 10rem;
   display: flex;
   justify-content: center; }
   @media (max-width: 37.5em) {
@@ -49,7 +48,8 @@ body {
       padding-top: 14rem; } }
 
 .content-container {
-  margin: 0 3rem 3rem 3rem; }
+  margin: 5rem 3rem 3rem 3rem;
+  width: 75%; }
   @media (max-width: 37.5em) {
     .content-container {
       margin-right: 1rem;
@@ -147,21 +147,20 @@ body {
 .content__link-item {
   border-radius: 10%; }
 
-@media (max-width: 37.5em) {
-  .nav-box-container {
-    display: none; } }
+.nav-box-container {
+  width: 25%; }
+  @media (max-width: 37.5em) {
+    .nav-box-container {
+      display: none; } }
 
 .nav-box-list-header {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 20%;
   background-color: #373a68;
   left: 0;
   height: 100%;
   /* Full height */
-  position: fixed;
-  /* Make it stick, even on scroll */
   overflow: auto;
   /* Enable scrolling if the sidenav has too much content */ }
 
@@ -253,11 +252,10 @@ body {
 
 .header {
   display: flex;
-  position: fixed;
   top: 0;
   background-color: #305a91;
   width: 100%;
-  max-height: 7rem; }
+  height: 8rem; }
   .header__nav {
     display: flex;
     align-items: center;

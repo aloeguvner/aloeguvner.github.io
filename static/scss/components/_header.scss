@@ -1,10 +1,9 @@
 .header {
     display: flex;
-    position: fixed;
     top: 0;
     background-color: $color-primary;
     width: 100%;
-    max-height: 7rem;
+    height: 8rem;
 
     &__nav {
         display: flex;
